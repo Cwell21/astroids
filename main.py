@@ -43,8 +43,8 @@ def main():
                 return False
             for shot in shots:
                 if shot.collision_detection(obj):
-                    obj.kill()
                     shot.kill()
+                    obj.split()
                     break
             
         for obj in drawable:
